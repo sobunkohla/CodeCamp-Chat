@@ -1,11 +1,11 @@
 import React from 'react'
 
-export default function Translation({doStuff, setInput}) {
+export default function Translation({doStuff, setInput, result}) {
   return (
   <>
   <div className='AI-response'>
    <span className='AI-response--icon'>🤖</span> 
-   <p className='result-text'></p>
+   <p className='result-text'>{result.length > 0 ? result:""}</p>
   </div>
     <footer>
      <div className='footer-container'>
