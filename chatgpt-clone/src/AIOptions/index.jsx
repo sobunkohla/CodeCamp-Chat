@@ -10,7 +10,7 @@ export const arrayItems = [
   top_p: 1,
   frequency_penalty: 0.0,
   presence_penalty: 0.0,
-  stop: ["\n"],
+
     },
   },
   {
@@ -37,7 +37,7 @@ export const arrayItems = [
   top_p: 1.0,
   frequency_penalty: 0.5,
   presence_penalty: 0.0,
-  stop: ["You:"],
+
         },
   },
   {
@@ -51,7 +51,7 @@ export const arrayItems = [
   top_p: 1,
   frequency_penalty: 0.0,
   presence_penalty: 0.6,
-  stop: [" Human:", " AI:"],
+  
         },
   },
   {
@@ -132,7 +132,6 @@ export const arrayItems = [
       top_p: 1.0,
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
-      stop: ["\"\"\""],
         },
   },
   {
@@ -146,18 +145,16 @@ export const arrayItems = [
   top_p: 1.0,
   frequency_penalty: 0.0,
   presence_penalty: 0.0,
-  stop: ["###"],
         },
   },
 
   {
-    name: "Image Generator",
-    id: "ImageGenerator",
+    name: "ImagePrompt Generator",
+    id: "ImagePromptGenerator",
     description:
       "Generate any image from text, create your own unique logo with a simple prompt and make an amazing image to hang on your wall without having to buy the art ",
       option: {
         model: "text-davinci-003",
-        prompt: "Correct this to standard English:\n\nShe no went to the market.",
         temperature: 0,
         max_tokens: 60,
         top_p: 1.0,
